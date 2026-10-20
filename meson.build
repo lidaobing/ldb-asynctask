@@ -8,4 +8,4 @@ ldb_asynctask_dep = declare_dependency(
   include_directories: include_directories('.'),
 )
 
-install_headers('ldb-asynctask/asynctask.h', subdir: 'ldb-asynctask')
+install_headers('ldb-asynctask/async_task.h', subdir: 'ldb-asynctask')
