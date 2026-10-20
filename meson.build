@@ -4,3 +4,8 @@ project('ldb-asynctask', ['c'],
     meson_version: '>=0.53',
     default_options: ['warning_level=2', 'c_std=c17', 'werror=true'])
 
+ldb_asynctask_dep = declare_dependency(
+  include_directories: include_directories('.'),
+)
+
+install_headers('ldb-asynctask/asynctask.h', subdir: 'ldb-asynctask')
